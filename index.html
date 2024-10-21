@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast-rent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/af7244b83b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+
+    <button class="burger-btn">
+        <div class="burger-btn__box">
+            <div class="burger-btn__bars"></div>
+        </div>
+    </button>    
+    <nav class="nav">   
+        <div class="nav nav--active">
+            <div class="nav__items">
+                <a href="#offers" class="nav__item">Oferta</a>
+                <a href="#aboutus" class="nav__item">O nas</a>
+                <a href="#reviews" class="nav__item">Opinie</a>
+                <a href="#contact" class="nav__item">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header section">
+        <h1 class="header__heading">Fast rent</h1>
+        <p class="header__text">Wypożyczalnia luksusowych, sportowych samochodów.</p>
+        <a href="#offers" class="header__btn btn-special-animation">Poznaj oferte</a>
+        <div class="white-block white-block-left"></div>
+    </header>
+
+    <main class="main">
+        <section class="drive section-padding section white-section">
+
+            <div class="wrapper">
+                <h2 class="section-heading">Spełniaj marzenia</h2>
+
+
+                <div class="drive__box">
+                    <div class="drive__box-img">
+                        <img src="./img/ferrari_dream.jpg" alt="Sportowe ferrari na parkingu przed hotelem." class="drive__img">
+                    </div>
+                    <div class="drive__box-text">
+                        <h3 class="drive__title">Wejdź na wyższy poziom</h3>
+                        <p class="drive__text">Zasiądź za kierownicą Ferrari i doświadcz elegancji oraz mocy w jednym. Idealne połączenie luksusu i sportowej dynamiki na wyjątkowe okazje.</p>
+                    </div>
+                </div>
+
+                <div class="drive__box">
+                    <div class="drive__box-img drive__box-img--right">
+                        <img src="./img/lamborghini_dream.jpg" alt="Sportowe lamborghini na parkingu hotelowym" class="drive__img">
+                    </div>
+                    <div class="drive__box-text drive__box-text--right">
+                        <h3 class="drive__title">Wolność na pełnych obrotach</h3>
+                        <p class="drive__text">Zasiądź za kierownicą Lamborghini i spełnij swoje marzenie o luksusowej jeździe. Poczuj niesamowitą moc silnika i niezrównane osiągi, przemierzając malownicze trasy w wyjątkowym stylu.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="hero-img section">
+            <div class="white-block white-block-left"></div>
+            <div class="white-block white-block-right"></div>
+            <p class="hero-img__title">Twoje Marzenia w Zasięgu Ręki</p>
+            <hr>
+            <p class="hero-img__text">Wypożycz sportowy samochód i doświadcz niezapomnianych chwil na drodze</p>
+            <hr>
+        </section>
+
+        <section class="fleet section-padding section white-section" id="offers">
+            <div class="wrapper">
+                <h2 class="section-heading">Oferta</h2>
+
+                <div class="fleet__cards">
+
+                    <div class="fleet__card" onclick="void(0)">
+
+                        <div class="fleet__card-img fleet__card-img--first">
+                            <h3 class="fleet__card-img-title">Bmw m2 competition</h3>
+                            <p class="fleet__card-img-info"> <i class="fas fa-angle-double-right"></i>Więcej informacji</p>
+                        </div>
+
+                        <div class="fleet__card-info">
+                            <h3 class="fleet__card-info-title">Bmw m2 competition</h3>
+                            <ul class="fleet__card-info-list">
+                                <li class="fleet__card-info-list-item">3.0 R6</li>
+                                <li class="fleet__card-info-list-item">410 KM</li>
+                                <li class="fleet__card-info-list-item">550 Nm</li>
+                                <li class="fleet__card-info-list-item">0-100 4.2sec</li>
+                                <li class="fleet__card-info-list-item">V-max 250km/h</li>
+                            </ul>
+                            <button class="fleet__card-info-btn btn-special-animation">Wybierz</button>
+                        </div>
+
+                    </div>
+
+                    <div class="fleet__card" onclick="void(0)">
+
+                        <div class="fleet__card-img fleet__card-img--second">
+                            <h3 class="fleet__card-img-title">Bmw m3 g80</h3>
+                            <p class="fleet__card-img-info"> <i class="fas fa-angle-double-right"></i>Więcej informacji</p>
+                        </div>
+
+                        <div class="fleet__card-info">
+                            <h3 class="fleet__card-info-title">Bmw m3 g80</h3>
+                            <ul class="fleet__card-info-list">
+                                <li class="fleet__card-info-list-item">3.0 R6</li>
+                                <li class="fleet__card-info-list-item">510 KM</li>
+                                <li class="fleet__card-info-list-item">750 Nm</li>
+                                <li class="fleet__card-info-list-item">0-100 2.8sec</li>
+                                <li class="fleet__card-info-list-item">V-max 290km/h</li>
+                            </ul>
+                            <button class="fleet__card-info-btn btn-special-animation">Wybierz</button>
+                        </div>
+
+                    </div>
+
+                    <div class="fleet__card" onclick="void(0)">
+
+                        <div class="fleet__card-img fleet__card-img--third">
+                            <h3 class="fleet__card-img-title">Bmw m4 f82</h3>
+                            <p class="fleet__card-img-info"> <i class="fas fa-angle-double-right"></i>Więcej informacji</p>
+                        </div>
+
+                        <div class="fleet__card-info">
+                            <h3 class="fleet__card-info-title">Bmw m4 f82</h3>
+                            <ul class="fleet__card-info-list">
+                                <li class="fleet__card-info-list-item">3.0 R6</li>
+                                <li class="fleet__card-info-list-item">430 KM</li>
+                                <li class="fleet__card-info-list-item">620 Nm</li>
+                                <li class="fleet__card-info-list-item">0-100 3.3sec</li>
+                                <li class="fleet__card-info-list-item">V-max 278km/h</li>
+                            </ul>
+                            <button class="fleet__card-info-btn btn-special-animation">Wybierz</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="fleet__card" onclick="void(0)">
+
+                        <div class="fleet__card-img fleet__card-img--fourth">
+                            <h3 class="fleet__card-img-title">Bmw m4 f82</h3>
+                            <p class="fleet__card-img-info"> <i class="fas fa-angle-double-right"></i>Więcej informacji</p>
+                        </div>
+
+                        <div class="fleet__card-info">
+                            <h3 class="fleet__card-info-title">Bmw m4 f82</h3>
+                            <ul class="fleet__card-info-list">
+                                <li class="fleet__card-info-list-item">3.0 R6</li>
+                                <li class="fleet__card-info-list-item">430 KM</li>
+                                <li class="fleet__card-info-list-item">620 Nm</li>
+                                <li class="fleet__card-info-list-item">0-100 3.3sec</li>
+                                <li class="fleet__card-info-list-item">V-max 278km/h</li>
+                            </ul>
+                            <button class="fleet__card-info-btn btn-special-animation">Wybierz</button>
+                        </div>
+
+                    </div>
+
+                    <div class="fleet__card" onclick="void(0)">
+
+                        <div class="fleet__card-img fleet__card-img--fifth">
+                            <h3 class="fleet__card-img-title">Bmw m4 f82</h3>
+                            <p class="fleet__card-img-info"> <i class="fas fa-angle-double-right"></i>Więcej informacji</p>
+                        </div>
+
+                        <div class="fleet__card-info">
+                            <h3 class="fleet__card-info-title">Bmw m4 f82</h3>
+                            <ul class="fleet__card-info-list">
+                                <li class="fleet__card-info-list-item">3.0 R6</li>
+                                <li class="fleet__card-info-list-item">430 KM</li>
+                                <li class="fleet__card-info-list-item">620 Nm</li>
+                                <li class="fleet__card-info-list-item">0-100 3.3sec</li>
+                                <li class="fleet__card-info-list-item">V-max 278km/h</li>
+                            </ul>
+                            <button class="fleet__card-info-btn btn-special-animation">Wybierz</button>
+                        </div>
+
+                    </div>
+
+                    <div class="fleet__card" onclick="void(0)">
+
+                        <div class="fleet__card-img fleet__card-img--sixth">
+                            <h3 class="fleet__card-img-title">Bmw m4 f82</h3>
+                            <p class="fleet__card-img-info"> <i class="fas fa-angle-double-right"></i>Więcej informacji</p>
+                        </div>
+
+                        <div class="fleet__card-info">
+                            <h3 class="fleet__card-info-title">Bmw m4 f82</h3>
+                            <ul class="fleet__card-info-list">
+                                <li class="fleet__card-info-list-item">3.0 R6</li>
+                                <li class="fleet__card-info-list-item">430 KM</li>
+                                <li class="fleet__card-info-list-item">620 Nm</li>
+                                <li class="fleet__card-info-list-item">0-100 3.3sec</li>
+                                <li class="fleet__card-info-list-item">V-max 278km/h</li>
+                            </ul>
+                            <button class="fleet__card-info-btn btn-special-animation">Wybierz</button>
+                        </div>
+
+                    </div>
+
+                    <div class="fleet__card" onclick="void(0)">
+
+                        <div class="fleet__card-img fleet__card-img--seventh">
+                            <h3 class="fleet__card-img-title">Bmw m4 f82</h3>
+                            <p class="fleet__card-img-info"> <i class="fas fa-angle-double-right"></i>Więcej informacji</p>
+                        </div>
+
+                        <div class="fleet__card-info">
+                            <h3 class="fleet__card-info-title">Bmw m4 f82</h3>
+                            <ul class="fleet__card-info-list">
+                                <li class="fleet__card-info-list-item">3.0 R6</li>
+                                <li class="fleet__card-info-list-item">430 KM</li>
+                                <li class="fleet__card-info-list-item">620 Nm</li>
+                                <li class="fleet__card-info-list-item">0-100 3.3sec</li>
+                                <li class="fleet__card-info-list-item">V-max 278km/h</li>
+                            </ul>
+                            <button class="fleet__card-info-btn btn-special-animation">Wybierz</button>
+                        </div>
+
+                    </div>
+
+                    <div class="fleet__card" onclick="void(0)">
+
+                        <div class="fleet__card-img fleet__card-img--eighth">
+                            <h3 class="fleet__card-img-title">Bmw m4 f82</h3>
+                            <p class="fleet__card-img-info"> <i class="fas fa-angle-double-right"></i>Więcej informacji</p>
+                        </div>
+
+                        <div class="fleet__card-info">
+                            <h3 class="fleet__card-info-title">Bmw m4 f82</h3>
+                            <ul class="fleet__card-info-list">
+                                <li class="fleet__card-info-list-item">3.0 R6</li>
+                                <li class="fleet__card-info-list-item">430 KM</li>
+                                <li class="fleet__card-info-list-item">620 Nm</li>
+                                <li class="fleet__card-info-list-item">0-100 3.3sec</li>
+                                <li class="fleet__card-info-list-item">V-max 278km/h</li>
+                            </ul>
+                            <button class="fleet__card-info-btn btn-special-animation">Wybierz</button>
+                        </div>
+
+                    </div>
+
+                    <div class="fleet__card" onclick="void(0)">
+
+                        <div class="fleet__card-img fleet__card-img--ninth">
+                            <h3 class="fleet__card-img-title">Bmw m4 f82</h3>
+                            <p class="fleet__card-img-info"> <i class="fas fa-angle-double-right"></i>Więcej informacji</p>
+                        </div>
+
+                        <div class="fleet__card-info">
+                            <h3 class="fleet__card-info-title">Bmw m4 f82</h3>
+                            <ul class="fleet__card-info-list">
+                                <li class="fleet__card-info-list-item">3.0 R6</li>
+                                <li class="fleet__card-info-list-item">430 KM</li>
+                                <li class="fleet__card-info-list-item">620 Nm</li>
+                                <li class="fleet__card-info-list-item">0-100 3.3sec</li>
+                                <li class="fleet__card-info-list-item">V-max 278km/h</li>
+                            </ul>
+                            <button class="fleet__card-info-btn btn-special-animation">Wybierz</button>
+                        </div>
+
+                    </div>
+                    <div class="fleet__card" onclick="void(0)">
+
+                        <div class="fleet__card-img fleet__card-img--tenth">
+                            <h3 class="fleet__card-img-title">Bmw m4 f82</h3>
+                            <p class="fleet__card-img-info"> <i class="fas fa-angle-double-right"></i>Więcej informacji</p>
+                        </div>
+
+                        <div class="fleet__card-info">
+                            <h3 class="fleet__card-info-title">Bmw m4 f82</h3>
+                            <ul class="fleet__card-info-list">
+                                <li class="fleet__card-info-list-item">3.0 R6</li>
+                                <li class="fleet__card-info-list-item">430 KM</li>
+                                <li class="fleet__card-info-list-item">620 Nm</li>
+                                <li class="fleet__card-info-list-item">0-100 3.3sec</li>
+                                <li class="fleet__card-info-list-item">V-max 278km/h</li>
+                            </ul>
+                            <button class="fleet__card-info-btn btn-special-animation">Wybierz</button>
+                        </div>
+
+                    </div>
+
+                    <div class="fleet__card" onclick="void(0)">
+
+                        <div class="fleet__card-img fleet__card-img--eleventh">
+                            <h3 class="fleet__card-img-title">Bmw m4 f82</h3>
+                            <p class="fleet__card-img-info"> <i class="fas fa-angle-double-right"></i>Więcej informacji</p>
+                        </div>
+
+                        <div class="fleet__card-info">
+                            <h3 class="fleet__card-info-title">Bmw m4 f82</h3>
+                            <ul class="fleet__card-info-list">
+                                <li class="fleet__card-info-list-item">3.0 R6</li>
+                                <li class="fleet__card-info-list-item">430 KM</li>
+                                <li class="fleet__card-info-list-item">620 Nm</li>
+                                <li class="fleet__card-info-list-item">0-100 3.3sec</li>
+                                <li class="fleet__card-info-list-item">V-max 278km/h</li>
+                            </ul>
+                            <button class="fleet__card-info-btn btn-special-animation">Wybierz</button>
+                        </div>
+
+                    </div>
+
+                    <div class="fleet__card" onclick="void(0)">
+
+                        <div class="fleet__card-img fleet__card-img--twelfth">
+                            <h3 class="fleet__card-img-title">Bmw m4 f82</h3>
+                            <p class="fleet__card-img-info"> <i class="fas fa-angle-double-right"></i>Więcej informacji</p>
+                        </div>
+
+                        <div class="fleet__card-info">
+                            <h3 class="fleet__card-info-title">Bmw m4 f82</h3>
+                            <ul class="fleet__card-info-list">
+                                <li class="fleet__card-info-list-item">3.0 R6</li>
+                                <li class="fleet__card-info-list-item">430 KM</li>
+                                <li class="fleet__card-info-list-item">620 Nm</li>
+                                <li class="fleet__card-info-list-item">0-100 3.3sec</li>
+                                <li class="fleet__card-info-list-item">V-max 278km/h</li>
+                            </ul>
+                            <button class="fleet__card-info-btn btn-special-animation">Wybierz</button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="offers section-padding section" id="aboutus">
+            <div class="white-block white-block-right"></div>
+            <div class="white-block white-block-left"></div>
+
+            <h2 class="section-heading">Oferta</h2>
+            <div class="wrapper">
+
+                <div class="offers__box">
+
+                    <div class="offers__option">
+                        <img src="img/offer.png" alt="" class="offers__option-img">
+                        <div class="offers__option-info">
+                            <h3 class="offers__option-heading">Bmw f30</h3>
+                            <p class="offers__option-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto veniam ipsa illum numquam aspernatur animi harum quo autem minima quod.</p>
+                            <p class="offers__option-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <button class="offers__option-btn btn-special-animation">Wybierz</button>
+                        </div>
+                    </div>
+                    
+                    <div class="offers__option">
+                        <img src="img/offer.png" alt="" class="offers__option-img offers__option-img--right">
+                        <div class="offers__option-info">
+                            <h3 class="offers__option-heading">Bmw f20</h3>
+                            <p class="offers__option-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto veniam ipsa illum numquam aspernatur animi harum quo autem minima quod.</p>
+                            <p class="offers__option-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <button class="offers__option-btn btn-special-animation">Wybierz</button>
+                        </div>
+                    </div>
+
+                    <div class="offers__option">
+                        <img src="img/offer.png" alt="" class="offers__option-img">
+                        <div class="offers__option-info">
+                            <h3 class="offers__option-heading">Bmw f10</h3>
+                            <p class="offers__option-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto veniam ipsa illum numquam aspernatur animi harum quo autem minima quod.</p>
+                            <p class="offers__option-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <button class="offers__option-btn btn-special-animation">Wybierz</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="reviews section-padding section white-section" id="reviews">
+            <h2 class="section-heading">Opinie</h2>
+            <div class="wrapper">
+
+                <div class="reviews__boxes">
+
+                    
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/review-1.jpg" alt="Tomasz Zieliński">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Wypożyczalnia spełniła moje marzenie. Ferrari było niesamowite, a obsługa profesjonalna. Polecam każdemu!</p>
+                            <strong>Tomasz Zieliński</strong>
+                        </div>
+                    </div>
+
+
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/review-2.jpg" alt="Krzysztof Nowak">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lamborghini, które wynająłem, to była prawdziwa przyjemność. Fantastyczna obsługa i świetny stan auta. Zdecydowanie polecam!</p>
+                            <strong>Krzysztof Nowak</strong>
+                        </div>
+
+
+                    </div><div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/review-3.jpg" alt="Marcin Wiśniewski">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Wynajęliśmy sportowe samochody na weekend. Jazda nimi była niesamowita! Wspaniałe doświadczenie, które zdecydowanie chciałbym powtórzyć w przyszłości.</p>
+                            <strong>Marcin Wiśniewski</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact section-padding section white-section" id="contact">
+
+            <div class="white-block white-block-right"></div>
+            <div class="white-block white-block-left"></div>
+
+            <h2 class="section-heading">Kontakt</h2>
+
+            <div class="wrapper">
+
+                <form action="" class="contact__form">
+
+                    <div class="contact__form-top">
+
+                        <label for="name" class="contact__form-label">Imię i nazwisko: </label>
+                        <input type="text" name="" id="name" class="contact__form-input">
+
+                        <label for="email" class="contact__form-label">Adres e-mail</label>
+                        <input type="text" name="" id="email" class="contact__form-input">
+                    </div>
+
+                    <label for="msg" class="contact__form-label">Wiadomość:</label>
+                    <textarea id="msg" class="contact__form-textarea"></textarea>
+                    
+                    <button type="submit" class="contact__form-btn btn-special-animation">Wyślij</button>
+                </form>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+
+        <div class="wrapper">
+
+            <div class="footer__boxes ">
+
+                <div class="footer__box">
+                    <h3 class="footer__box-title"><i class="fas fa-car"></i>Fast Rent co.</h3>
+                    <p>Fast Rent, nowoczesna wypożyczalnia sportowych samochodów, oferująca luksusowe i szybkie auta dla miłośników adrenaliny i komfortu.</p>
+                    <div class="footer__box-social">
+                        <a href="#" class="footer__box-link"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#" class="footer__box-link"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="footer__box-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            
+
+            <div class="footer__box footer__box-desktop">
+                <h3 class="footer__box-title">O firmie</h3>
+                <ul class="footer__box-list">
+                   <li class="footer__box-list-item"><a href="#">O nas</a></li>
+                   <li class="footer__box-list-item"><a href="#">Zarząd</a></li>
+                   <li class="footer__box-list-item"><a href="#">Kariera</a></li>
+                   <li class="footer__box-list-item"><a href="#">FAQ</a></li> 
+                </ul>
+            </div>
+        </div>
+        </div>
+
+        <hr>
+        <p class="footer__bottom-text">&copy; <span class="footer__year"></span> Fast Rent</p>
+    </footer>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/slick.js"></script>  
+<script src="js/main.js"></script>
+
+</body>
+</html>
