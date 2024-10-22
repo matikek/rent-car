@@ -303,13 +303,40 @@ body {
   transition: transform 1s, opacity 1s;
 }
 .fleet__card-img--first {
-  background-image: url("../img/m2.jpg");
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/c63s.jpg");
 }
 .fleet__card-img--second {
-  background-image: url("../img/m3_bober.jpg");
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/audirs3.jpg");
 }
 .fleet__card-img--third {
-  background-image: url("../img/m4_f82.jpg");
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/bmwm340i.jpg");
+}
+.fleet__card-img--fourth {
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/cupra.jpg");
+}
+.fleet__card-img--fifth {
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/audirs6.jpg");
+}
+.fleet__card-img--sixth {
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/audirsq3.jpg");
+}
+.fleet__card-img--seventh {
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/meganers.jpg");
+}
+.fleet__card-img--eighth {
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/lambo.jpg");
+}
+.fleet__card-img--ninth {
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/amggtr.jpg");
+}
+.fleet__card-img--tenth {
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/golf7r.jpg");
+}
+.fleet__card-img--eleventh {
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/bmwm2.jpg");
+}
+.fleet__card-img--twelfth {
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/ferrari.jpg");
 }
 .fleet__card-img-title {
   font-family: "Poppins", cursive;

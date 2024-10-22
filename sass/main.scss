@@ -233,15 +233,41 @@ body {
             background-size: cover;
             transition: transform 1s, opacity 1s;
             &--first {
-                background-image: url('../img/m2.jpg');
+                background-image: $dimming-gradient, url('../img/c63s.jpg');
             }
             &--second {
-                background-image: url('../img/m3_bober.jpg');
+                background-image: $dimming-gradient, url('../img/audirs3.jpg');
             }
             &--third {
-                background-image: url('../img/m4_f82.jpg');
+                background-image: $dimming-gradient, url('../img/bmwm340i.jpg');
             }
-           
+            &--fourth {
+                background-image: $dimming-gradient, url('../img/cupra.jpg');
+            }
+            &--fifth {
+                background-image: $dimming-gradient, url('../img/audirs6.jpg');
+            }
+            &--sixth {
+                background-image: $dimming-gradient, url('../img/audirsq3.jpg');
+            }
+            &--seventh {
+                background-image: $dimming-gradient, url('../img/meganers.jpg');
+            }
+            &--eighth {
+                background-image: $dimming-gradient, url('../img/lambo.jpg');
+            }
+            &--ninth {
+                background-image: $dimming-gradient, url('../img/amggtr.jpg');
+            }
+            &--tenth {
+                background-image: $dimming-gradient, url('../img/golf7r.jpg');
+            }
+            &--eleventh {
+                background-image: $dimming-gradient, url('../img/bmwm2.jpg');
+            }
+            &--twelfth {
+                background-image: $dimming-gradient, url('../img/ferrari.jpg');
+            }
             &-title {
                 font-family: "Poppins", cursive;
                 font-size: 2.8rem;
