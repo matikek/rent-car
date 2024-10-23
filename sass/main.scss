@@ -171,10 +171,6 @@ body {
 //rent section
 
 .rent {
-  .rent-line {
-    width: 100%;
-    text-align: center;
-  }
   .section-text {
     text-align: center;
     font-size: 3.5rem;
@@ -294,7 +290,6 @@ body {
         background-image: $dimming-gradient, url("../img/ferrari.jpg");
       }
       &-title {
-        // font-family: "Poppins", cursive;
         font-family: "Roboto Condensed", sans-serif;
         font-size: 2.8rem;
       }
@@ -317,12 +312,61 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      background-image: $blue-gradient-solid;
       border-radius: 8px;
       padding-top: 1.5em;
       opacity: 0;
       transform: rotateY(180deg);
       transition: transform 1s, opacity 1s;
+      z-index: 1;
+      &-bg {
+        filter: blur(0.15em);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        &-1 {
+          background-image: $dimming-gradient, url("../img/c63s-4.jpg");
+        }
+        &-2 {
+          background-image: $dimming-gradient, url("../img/audirs3-4.jpg");
+        }
+        &-3 {
+          background-image: $dimming-gradient, url("../img/bmwm340i-3.jpg");
+        }
+        &-4 {
+          background-image: $dimming-gradient, url("../img/cupra-4.jpg");
+        }
+        &-5 {
+          background-image: $dimming-gradient, url("../img/audirs6-5.jpg");
+        }
+        &-6 {
+          background-image: $dimming-gradient, url("../img/audirsq3-5.jpg");
+        }
+        &-7 {
+          background-image: $dimming-gradient, url("../img/meganers-3.jpg");
+        }
+        &-8 {
+          background-image: $dimming-gradient, url("../img/lambo-5.jpg");
+        }
+        &-9 {
+          background-image: $dimming-gradient, url("../img/amggtr-3.jpg");
+        }
+        &-10 {
+          background-image: $dimming-gradient, url("../img/golf7r-1.jpg");
+        }
+        &-11 {
+          background-image: $dimming-gradient, url("../img/bmwm2-3.jpg");
+        }
+        &-12 {
+          background-image: $dimming-gradient, url("../img/ferrari-5.jpg");
+        }
+      }
+
       &-title {
         position: absolute;
         left: 50%;
@@ -330,15 +374,18 @@ body {
         top: 1.2em;
         font-family: "Roboto Condensed", sans-serif;
         font-size: 2.7rem;
+        z-index: 3;
       }
       &-list {
         margin: 0 auto;
         width: 70%;
         list-style: none;
+        z-index: 4;
         &-item {
           padding: 1em;
           font-size: 1.4rem;
           border-bottom: 1px solid $light-white;
+          z-index: 5;
           &:last-child {
             border-bottom: none;
           }
@@ -378,10 +425,10 @@ body {
     box-shadow: 5px 5px 10px #2e2e2e2e;
     background-color: $pure-white;
     overflow: hidden;
-
+    background: none;
+    color: $pure-white;
     &-info {
       padding: 2em;
-      background-color: $pure-white;
       z-index: 10;
       &-text {
         font-size: 1.8rem;
@@ -397,7 +444,8 @@ body {
     &-text {
       margin-bottom: 0.5em;
       font-size: 1.3rem;
-      color: $dark;
+      color: $pure-white;
+      font-family: "Poppins", cursive;
     }
   }
 }
@@ -584,11 +632,12 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        background: none;
         &-text {
-            margin: 0.5em 0;
-            font-size: 2.6rem;
-            font-weight: 400;
-            font-family: "Roboto Condensed", sans-serif;
+          margin: 0.5em 0;
+          font-size: 2.6rem;
+          font-weight: 400;
+          font-family: "Roboto Condensed", sans-serif;
         }
       }
       &-heading {
@@ -678,6 +727,10 @@ body {
       }
     }
   }
+  .aboutus__option-text {
+    font-size: 1.6rem;
+    line-height: 1.85em;
+  }
 }
 
 @media (min-width: 992px) {
@@ -732,7 +785,8 @@ body {
         height: 300px;
       }
       &-text {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
+        line-height: 1.85em;
       }
     }
   }

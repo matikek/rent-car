@@ -160,7 +160,7 @@ body {
   width: 100%;
   transform: translateX(100%);
   transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
-  background-image: linear-gradient(45deg, rgb(52, 58, 64), rgb(73, 80, 87));
+  background-image: linear-gradient(45deg, rgb(69, 75, 82), rgb(141, 180, 219));
   z-index: 100;
 }
 .nav--active {
@@ -241,10 +241,6 @@ body {
   background-color: #eee;
 }
 
-.rent .rent-line {
-  width: 100%;
-  text-align: center;
-}
 .rent .section-text {
   text-align: center;
   font-size: 3.5rem;
@@ -384,12 +380,61 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(45deg, rgb(52, 58, 64), rgb(73, 80, 87));
   border-radius: 8px;
   padding-top: 1.5em;
   opacity: 0;
   transform: rotateY(180deg);
   transition: transform 1s, opacity 1s;
+  z-index: 1;
+}
+.fleet__card-info-bg {
+  filter: blur(0.15em);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.fleet__card-info-bg-1 {
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/c63s-4.jpg");
+}
+.fleet__card-info-bg-2 {
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/audirs3-4.jpg");
+}
+.fleet__card-info-bg-3 {
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/bmwm340i-3.jpg");
+}
+.fleet__card-info-bg-4 {
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/cupra-4.jpg");
+}
+.fleet__card-info-bg-5 {
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/audirs6-5.jpg");
+}
+.fleet__card-info-bg-6 {
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/audirsq3-5.jpg");
+}
+.fleet__card-info-bg-7 {
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/meganers-3.jpg");
+}
+.fleet__card-info-bg-8 {
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/lambo-5.jpg");
+}
+.fleet__card-info-bg-9 {
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/amggtr-3.jpg");
+}
+.fleet__card-info-bg-10 {
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/golf7r-1.jpg");
+}
+.fleet__card-info-bg-11 {
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/bmwm2-3.jpg");
+}
+.fleet__card-info-bg-12 {
+  background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/ferrari-5.jpg");
 }
 .fleet__card-info-title {
   position: absolute;
@@ -398,16 +443,19 @@ body {
   top: 1.2em;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 2.7rem;
+  z-index: 3;
 }
 .fleet__card-info-list {
   margin: 0 auto;
   width: 70%;
   list-style: none;
+  z-index: 4;
 }
 .fleet__card-info-list-item {
   padding: 1em;
   font-size: 1.4rem;
   border-bottom: 1px solid #eee;
+  z-index: 5;
 }
 .fleet__card-info-list-item:last-child {
   border-bottom: none;
@@ -445,10 +493,11 @@ body {
   box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.1803921569);
   background-color: #fff;
   overflow: hidden;
+  background: none;
+  color: #fff;
 }
 .aboutus__option-info {
   padding: 2em;
-  background-color: #fff;
   z-index: 10;
 }
 .aboutus__option-info-text {
@@ -464,7 +513,8 @@ body {
 .aboutus__option-text {
   margin-bottom: 0.5em;
   font-size: 1.3rem;
-  color: #2e2e2e;
+  color: #fff;
+  font-family: "Poppins", cursive;
 }
 
 @media (max-width: 767px) {
@@ -635,6 +685,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background: none;
   }
   .aboutus__option-info-text {
     margin: 0.5em 0;
@@ -717,6 +768,10 @@ body {
     color: #eee;
     text-decoration: none;
   }
+  .aboutus__option-text {
+    font-size: 1.6rem;
+    line-height: 1.85em;
+  }
 }
 @media (min-width: 992px) {
   .burger-btn {
@@ -767,7 +822,8 @@ body {
     height: 300px;
   }
   .aboutus__option-text {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    line-height: 1.85em;
   }
 }
 @media (min-width: 1100px) {
