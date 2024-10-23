@@ -120,7 +120,8 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
 }
-.burger-btn:hover .burger-btn__bars::after, .burger-btn:hover .burger-btn__bars::before {
+.burger-btn:hover .burger-btn__bars::after,
+.burger-btn:hover .burger-btn__bars::before {
   width: 100%;
 }
 .burger-btn__box {
@@ -218,7 +219,6 @@ body {
   background-attachment: scroll;
 }
 .header__heading {
-  font-family: "Poppins", cursive;
   font-size: 4.8rem;
   font-weight: 300;
 }
@@ -241,22 +241,46 @@ body {
   background-color: #eee;
 }
 
-.drive__box {
+.rent .rent-line {
+  width: 100%;
+  text-align: center;
+}
+.rent .section-text {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.rent .section-text2 {
+  font-size: 1.9rem;
+  padding-top: 1em;
+  font-family: "Poppins", cursive;
+  color: #686767;
+  text-align: center;
+}
+.rent__box {
   display: flex;
   flex-direction: column;
-  margin: 2em 0;
+  margin: 1.3em 0;
+  padding: 2em;
+  box-shadow: 5px 5px 10px rgba(1, 1, 1, 0.25);
 }
-.drive__img {
+.rent__number {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 1em;
+  font-family: "Poppins", cursive;
+  font-weight: 600;
+  font-size: 4.4rem;
 }
-.drive__title {
+.rent__title {
+  font-weight: 500;
   margin-bottom: 0.5em;
 }
-.drive__text {
+.rent__text {
   font-size: 1.4rem;
+  color: #686767;
 }
 
 .hero-img {
@@ -339,7 +363,7 @@ body {
   background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.25), rgba(25, 25, 27, 0.25)), url("../img/ferrari.jpg");
 }
 .fleet__card-img-title {
-  font-family: "Poppins", cursive;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 2.8rem;
 }
 .fleet__card-img-info {
@@ -372,8 +396,8 @@ body {
   left: 50%;
   transform: translateX(-50%);
   top: 1.2em;
-  font-family: "Poppins", cursive;
-  font-size: 2.8rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2.7rem;
 }
 .fleet__card-info-list {
   margin: 0 auto;
@@ -404,57 +428,43 @@ body {
   background-color: #0fe29c;
 }
 
-.offers {
+.aboutus {
   position: relative;
   background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.75), rgba(25, 25, 27, 0.75)), url("../img/offer-mini.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  width: 100%;
   overflow: hidden;
 }
-.offers .section-heading {
+.aboutus .section-heading {
   color: #fff;
 }
-.offers__option {
-  margin: 1em 0;
+.aboutus__option {
+  margin: 2em 0;
   box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.1803921569);
   background-color: #fff;
   overflow: hidden;
 }
-.offers__option-img {
-  width: 50%;
-  transition: transform 0.3s;
-}
-.offers__option-img:hover {
-  transform: scale(1.1);
-}
-.offers__option-info {
+.aboutus__option-info {
   padding: 2em;
   background-color: #fff;
   z-index: 10;
 }
-.offers__option-heading {
+.aboutus__option-info-text {
+  font-size: 1.8rem;
+  margin: 0.5em 0;
+  font-weight: 400;
+}
+.aboutus__option-heading {
   margin-bottom: 0.5em;
   font-size: 2.4rem;
   font-weight: 300;
 }
-.offers__option-text {
+.aboutus__option-text {
   margin-bottom: 0.5em;
   font-size: 1.3rem;
   color: #2e2e2e;
-}
-.offers__option-btn {
-  margin-top: 1em;
-  padding: 0.8em;
-  width: 100%;
-  color: #fff;
-  background-color: rgb(33, 37, 41);
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.offers__option-btn::before {
-  background-color: #495057;
 }
 
 @media (max-width: 767px) {
@@ -585,49 +595,62 @@ body {
 }
 
 @media (min-width: 576px) {
-  .drive__box {
+  .rent__box {
     flex-direction: row;
     justify-content: space-between;
   }
-  .drive__box-text {
+  .rent__box-text {
     width: 55%;
   }
-  .drive__box-text--right {
+  .rent__box-text--right {
     text-align: right;
   }
-  .drive__box-img {
+  .rent__box-number {
     width: 40%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .drive__box-img--right {
+  .rent__box-number--right {
     order: 1;
   }
-  .drive__img {
+  .rent__number {
     margin-bottom: 0;
     max-height: 300px;
   }
-  .offers__option {
-    display: flex;
-    margin: 2em 0;
+  .aboutus__box {
     width: 100%;
   }
-  .offers__option-img {
+  .aboutus__option {
+    display: flex;
+    margin: 0em 0em;
     width: 50%;
-    height: auto;
+    line-height: 1.6em;
   }
-  .offers__option-img--right {
-    order: 1;
+  .aboutus__option--right {
+    margin-left: auto;
   }
-  .offers__option-info {
+  .aboutus__option-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  .offers__option-heading {
-    margin-bottom: 0.5em;
-    font-size: 3.6rem;
+  .aboutus__option-info-text {
+    margin: 0.5em 0;
+    font-size: 2.6rem;
+    font-weight: 400;
+    font-family: "Roboto Condensed", sans-serif;
   }
-  .offers__option-btn {
-    padding: 1em;
+  .aboutus__option-heading {
+    font-family: "Roboto Condensed", sans-serif;
+    margin-bottom: 0.8em;
+    font-size: 3.6rem;
+    font-weight: 450;
+  }
+  .aboutus__option-text {
+    font-family: "Poppins", cursive;
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 768px) {
@@ -644,7 +667,7 @@ body {
   .header__btn {
     font-size: 1.6rem;
   }
-  .drive__text {
+  .rent__text {
     font-size: 1.6rem;
   }
   .hero-img {
@@ -709,19 +732,19 @@ body {
   .nav__item {
     font-size: 4rem;
   }
-  .drive__box {
+  .rent__box {
     margin: 5em 0;
   }
-  .drive__box-text {
+  .rent__box-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     margin-bottom: 2.5em;
   }
-  .drive__title {
+  .rent__title {
     font-size: 3rem;
   }
-  .drive__text {
+  .rent__text {
     font-size: 2rem;
   }
   .hero-img {
@@ -735,15 +758,15 @@ body {
     width: 60%;
     max-width: 900px;
   }
-  .offers {
+  .aboutus {
     background-image: linear-gradient(45deg, rgba(98, 101, 104, 0.75), rgba(25, 25, 27, 0.75)), url("../img/offer-big.jpg");
   }
-  .offers__option-img {
+  .aboutus__option-img {
     -o-object-fit: cover;
        object-fit: cover;
     height: 300px;
   }
-  .offers__option-text {
+  .aboutus__option-text {
     font-size: 1.5rem;
   }
 }
