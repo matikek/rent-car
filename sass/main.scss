@@ -169,6 +169,7 @@ body {
     }
   }
 }
+
 //Main
 //rent section
 
@@ -663,9 +664,9 @@ body {
 
 .modal-header {
   .modal-title {
-      width: 100%;
-      font-size: 2.6rem;
-      text-align: center !important;
+    width: 100%;
+    font-size: 2.6rem;
+    text-align: center !important;
   }
 }
 form {
@@ -673,8 +674,8 @@ form {
     font-size: 2.2rem;
   }
   input {
-        font-size: 1.5rem !important;     
-  } 
+    font-size: 1.5rem !important;
+  }
   .btn {
     font-size: 1.6rem;
   }
@@ -821,6 +822,115 @@ form {
   .fleet {
     &__card {
       width: 30%;
+    }
+  }
+}
+//car
+.car-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  height: 40vh;
+  text-align: center;
+  color: $pure-white;
+  background-position: 0 60%;
+  background-size: cover;
+}
+.car {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  .wrapper {
+    background-color: #fefefe;
+  }
+  .car__text {
+    font-size: 2rem;
+    line-height: 2.2em;
+    font-family: "Poppins", cursive;
+    .car_title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --bs-gutter-x: 0px;
+    padding: 1em;
+    margin-bottom: 5em;
+    box-shadow: 5px 5px 10px rgba(1, 1, 1, 0.25);
+  }
+
+  .section-heading {
+    color: $pure-white;
+  }
+
+  .car__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .carousel-inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .p-5 {
+    padding: 3rem;
+  }
+
+  .mb-4 {
+    margin-bottom: 1.5rem;
+  }
+  .list-group {
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+
+  .content {
+    padding: 20px;
+    background-color: white;
+    display: none;
+    box-shadow: 5px 5px 10px rgba(1, 1, 1, 0.25);
+  }
+
+  .content.active {
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .vehicle p {
+      font-size: 1.5rem;
+    }
+
+    .list-group {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.container-fluid {
+  .table {
+    td {
+      padding: 1em;
+    }
+  }
+  .list-group {
+    .list-group-item {
+      border: none;
+      text-align: center;
+      font-size: 2rem;
     }
   }
 }

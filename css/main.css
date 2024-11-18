@@ -940,4 +940,97 @@ form .btn {
   .fleet__card {
     width: 30%;
   }
+}
+.car-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  height: 40vh;
+  text-align: center;
+  color: #fff;
+  background-position: 0 60%;
+  background-size: cover;
+}
+
+.car {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.car .wrapper {
+  background-color: #fefefe;
+}
+.car .car__text {
+  font-size: 2rem;
+  line-height: 2.2em;
+  font-family: "Poppins", cursive;
+}
+.car .car__text .car_title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.car .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --bs-gutter-x: 0px;
+  padding: 1em;
+  margin-bottom: 5em;
+  box-shadow: 5px 5px 10px rgba(1, 1, 1, 0.25);
+}
+.car .section-heading {
+  color: #fff;
+}
+.car .car__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.car .carousel-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.car .p-5 {
+  padding: 3rem;
+}
+.car .mb-4 {
+  margin-bottom: 1.5rem;
+}
+.car .list-group {
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.car .content {
+  padding: 20px;
+  background-color: white;
+  display: none;
+  box-shadow: 5px 5px 10px rgba(1, 1, 1, 0.25);
+}
+.car .content.active {
+  display: block;
+}
+@media (max-width: 768px) {
+  .car .vehicle p {
+    font-size: 1.5rem;
+  }
+  .car .list-group {
+    flex-wrap: wrap;
+  }
+}
+
+.container-fluid .table td {
+  padding: 1em;
+}
+.container-fluid .list-group .list-group-item {
+  border: none;
+  text-align: center;
+  font-size: 2rem;
 }/*# sourceMappingURL=main.css.map */
