@@ -610,6 +610,90 @@ body {
   font-family: "Poppins", cursive;
 }
 
+.modal-dialog {
+  margin: auto;
+  padding: 20px;
+}
+
+.calendar-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reservation-modal .modal-content {
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.reservation-modal .modal-header .modal-title {
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+
+.reservation-form .form-label {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.reservation-form .form-select {
+  font-size: 1.4rem;
+  padding: 0.75rem;
+}
+
+.reservation-form .form-control {
+  font-size: 1rem;
+  padding: 0.75rem;
+}
+
+.calendar {
+  margin: 0 auto;
+  width: 100%;
+  max-width: none;
+}
+
+.reservation-modal .form-check-label {
+  font-size: 1.4rem;
+}
+
+.reservation-modal h6 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.reservation-modal .form-control[readonly] {
+  background-color: #f8f9fa;
+  font-weight: 500;
+  color: #495057;
+}
+
+.reservation-btn {
+  font-size: 1.2rem;
+  padding: 1rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.calendar {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .reservation-btn {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .modal-content {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+}
 @media (max-width: 767px) {
   .reviews.section-padding {
     padding: 6em 0;
@@ -737,6 +821,33 @@ body {
   text-align: center;
 }
 
+.container-fluid {
+  max-width: 1400px;
+}
+.container-fluid .table {
+  position: relative;
+}
+.container-fluid .table td {
+  word-wrap: break-word;
+  white-space: normal;
+  padding: 1em;
+  font-size: 1.6rem;
+}
+.container-fluid .list-group .list-group-item {
+  border: none;
+  text-align: center;
+  font-size: 2rem;
+}
+.container-fluid .btn-primary {
+  position: absolute;
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  bottom: 2px;
+  right: 20%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
 @media (min-width: 576px) {
   .rent__box {
     flex-direction: row;
@@ -795,6 +906,27 @@ body {
   .aboutus__option-text {
     font-family: "Poppins", cursive;
     font-size: 1.6rem;
+  }
+  .container-fluid {
+    margin-bottom: 30px;
+  }
+  .container-fluid .table {
+    position: relative;
+  }
+  .container-fluid .table td {
+    font-size: 2rem;
+  }
+  .container-fluid .list-group .list-group-item {
+    border: none;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .btn-primary {
+    position: absolute;
+    padding: 15px 30px;
+    font-size: 2rem;
+    bottom: 1%;
+    right: 10%;
   }
 }
 .modal-header .modal-title {
@@ -960,6 +1092,9 @@ form .btn {
   width: 100%;
   overflow: hidden;
 }
+.car .content {
+  overflow: hidden;
+}
 .car .wrapper {
   background-color: #fefefe;
 }
@@ -1024,13 +1159,4 @@ form .btn {
   .car .list-group {
     flex-wrap: wrap;
   }
-}
-
-.container-fluid .table td {
-  padding: 1em;
-}
-.container-fluid .list-group .list-group-item {
-  border: none;
-  text-align: center;
-  font-size: 2rem;
 }/*# sourceMappingURL=main.css.map */

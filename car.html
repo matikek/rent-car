@@ -23,6 +23,8 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -191,11 +193,81 @@
                   </tr>
                 </tbody>
               </table>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservationModal">Rezerwuj</button>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <!-- okno modal do rezerwacji -->
+
+    <div class="modal fade reservation-modal" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="reservationModalLabel">Formularz rezerwacji</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="reservationForm" class="reservation-form">
+              <div class="mb-4 calendar-picker">
+                <label for="dateRangePicker" class="form-label">Wybierz zakres dat</label>
+                <div id="dateRangePicker" class="calendar"></div>
+                <div id="selectedDates" class="mt-2 text-muted"></div>
+              </div>
+
+              <div class="mb-4">
+                <label for="pickupLocation" class="form-label">Miejsce odbioru</label>
+                <select class="form-select reservation-select" id="pickupLocation" required>
+                  <option value="" disabled selected>Wybierz miejsce odbioru</option>
+                  <option value="lublin-projektowa">Lublin, ul. Projektowa 4</option>
+                </select>
+              </div>
+
+              <div class="mb-4">
+                <label for="returnLocation" class="form-label">Miejsce zwrotu</label>
+                <select class="form-select reservation-select" id="returnLocation" required>
+                  <option value="" disabled selected>Wybierz miejsce zwrotu</option>
+                  <option value="lublin-projektowa">Lublin, ul. Projektowa 4</option>
+                </select>
+              </div>
+
+              <div class="mb-4">
+                <h6 class="mb-3">Dodatki opcjonalne</h6>
+                <div class="form-check mb-2">
+                  <input class="form-check-input reservation-checkbox" type="checkbox" id="fuelOption" />
+                  <label class="form-check-label" for="fuelOption"> Zwrot pojazdu z pustym bakiem (300 zł) </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input reservation-checkbox" type="checkbox" id="cleaningOption" />
+                  <label class="form-check-label" for="cleaningOption"> Mycie pojazdu (150 zł) </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input reservation-checkbox" type="checkbox" id="assistanceOption" />
+                  <label class="form-check-label" for="assistanceOption"> Assistance 24/7 (250 zł/dzień) </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input reservation-checkbox" type="checkbox" id="extraDriverOption" />
+                  <label class="form-check-label" for="extraDriverOption"> Dodatkowy kierowca (80 zł/dzień) </label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input reservation-checkbox" type="checkbox" id="replacementCarOption" />
+                  <label class="form-check-label" for="replacementCarOption"> Podstawienie auta zastępczego w razie awarii (400 zł) </label>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label for="totalCost" class="form-label">Całkowity koszt (PLN)</label>
+                <input type="text" class="form-control" id="totalCost" placeholder="Koszt wyliczany automatycznie" readonly />
+              </div>
+
+              <button type="submit" class="btn btn-secondary reservation-btn">Zarezerwuj</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="wrapper">
@@ -296,7 +368,11 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+
     <script src="js/dynamic_car_nav.js"></script>
     <script src="js/car.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pl.js"></script>
+    <script src="js/calendar.js"></script>
   </body>
 </html>
