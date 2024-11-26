@@ -170,7 +170,6 @@ body {
   }
 }
 
-//Main
 //rent section
 
 .rent {
@@ -466,29 +465,41 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.reservation-modal .modal-content {
-  padding: 2rem;
-  border-radius: 10px;
+.reservation-modal {
+  .modal-content {
+    padding: 2rem;
+    border-radius: 10px;
+  }
 }
 
-.reservation-modal .modal-header .modal-title {
-  font-size: 2.1rem;
-  font-weight: 600;
+.reservation-modal {
+  .modal-header {
+    .modal-title {
+      font-size: 2.1rem;
+      font-weight: 600;
+    }
+  }
 }
 
-.reservation-form .form-label {
-  font-size: 1.8rem;
-  font-weight: 600;
+.reservation-form {
+  .form-label {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
 }
 
-.reservation-form .form-select {
-  font-size: 1.4rem;
-  padding: 0.75rem;
+.reservation-form {
+  .form-select {
+    font-size: 1.4rem;
+    padding: 0.75rem;
+  }
 }
 
-.reservation-form .form-control {
-  font-size: 1rem;
-  padding: 0.75rem;
+.reservation-form {
+  .form-control {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
 }
 
 .calendar {
@@ -497,8 +508,10 @@ body {
   max-width: none;
 }
 
-.reservation-modal .form-check-label {
-  font-size: 1.4rem;
+.reservation-modal {
+  .form-check-label {
+    font-size: 1.4rem;
+  }
 }
 
 .reservation-modal h6 {
@@ -506,10 +519,12 @@ body {
   font-weight: 600;
 }
 
-.reservation-modal .form-control[readonly] {
-  background-color: #f8f9fa;
-  font-weight: 500;
-  color: #495057;
+.reservation-modal {
+  .form-control[readonly] {
+    background-color: #f8f9fa;
+    font-weight: 500;
+    color: #495057;
+  }
 }
 
 .reservation-btn {
@@ -542,8 +557,10 @@ body {
 //Opinie
 
 @media (max-width: 767px) {
-  .reviews.section-padding {
-    padding: 6em 0;
+  .reviews {
+    .section-padding {
+      padding: 6em 0;
+    }
   }
 }
 
@@ -703,8 +720,6 @@ body {
   }
 }
 
-//modal rezerwacji
-
 //Media
 @media (min-width: 576px) {
   .rent {
@@ -776,7 +791,7 @@ body {
     .table {
       position: relative;
       td {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
     }
     .list-group {
@@ -961,7 +976,9 @@ form {
     }
   }
 }
+
 //car
+
 .car-header {
   position: relative;
   display: flex;
@@ -975,85 +992,129 @@ form {
   background-position: 0 60%;
   background-size: cover;
 }
-.car {
-  position: relative;
+.car-title {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.car-main {
+  font-family: "Poppins", cursive;
+  background-color: #f9f9f9;
+}
+.auto-zdjecie {
   width: 100%;
-  overflow: hidden;
-  .content {
-    overflow: hidden;
+  img {
+    width: 50%;
   }
-  .wrapper {
-    background-color: #fefefe;
-  }
-  .car__text {
-    font-size: 2rem;
-    line-height: 2.2em;
-    font-family: "Poppins", cursive;
-    .car_title {
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
-  }
+}
+.auto-tresc {
+  height: auto;
+  text-align: left;
+}
+.car-border {
+  padding: 50px;
+  margin-top: 5em;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(1, 1, 1, 0.25);
+}
 
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    --bs-gutter-x: 0px;
-    padding: 1em;
-    margin-bottom: 5em;
-    box-shadow: 5px 5px 10px rgba(1, 1, 1, 0.25);
-  }
+.spec-box {
+  padding: 2rem 1rem;
+  text-align: left;
+  box-shadow: 1px 1px 12px rgba(122, 122, 122, 0.25);
+}
+.black-heading {
+  background-color: #2e2e2e;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+.auto-opis {
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 2em;
+  font-size: 2rem;
+}
+.row {
+  justify-content: start;
+}
+.container-fluid .table td {
+  font-size: 2rem;
+}
 
-  .section-heading {
-    color: $pure-white;
-  }
+.btn-reservation {
+  padding: 0.2em 1em;
+  margin-top: 8px;
+  background-color: royalblue;
+  font-size: 2.2rem;
+}
 
-  .car__box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .carousel-inner {
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
+.rent-bold-text {
+  max-width: 360px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 3px 15px;
+  font-size: 2rem;
+  margin-top: 15px;
+}
+.car-description {
+  margin-top: 20px;
+  font-size: 1.8rem;
+}
 
-  .p-5 {
-    padding: 3rem;
-  }
+//galeria zdjec pojazdu
 
-  .mb-4 {
-    margin-bottom: 1.5rem;
-  }
-  .list-group {
-    font-weight: 600;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 2em;
-  }
+#image-carousel {
+  position: relative;
+}
 
-  .content {
-    padding: 20px;
-    background-color: white;
-    display: none;
-    box-shadow: 5px 5px 10px rgba(1, 1, 1, 0.25);
-  }
+.splide__arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 10;
+}
 
-  .content.active {
-    display: block;
-  }
+.splide__arrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 5px;
+  margin: 0px -70px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.splide__pagination {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
 
-  @media (max-width: 768px) {
-    .vehicle p {
-      font-size: 1.5rem;
-    }
+.splide__pagination .splide__dot {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 15px;
+  cursor: pointer;
+}
 
-    .list-group {
-      flex-wrap: wrap;
-    }
-  }
+.splide__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 250px;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }

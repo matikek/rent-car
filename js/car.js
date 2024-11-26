@@ -12,6 +12,7 @@ function getCarDataById(id) {
     {
       id: "c63s",
       headerImage: "./img/c63s_wal.jpg",
+      carImage: "./img/c63s-1.jpg",
       car_title: "Mercedes-AMG C63s",
       car_text: `Mercedes-AMG C63s to luksusowy sedan o imponujących osiągach i wyjątkowej stylistyce. Wyposażony w 4.0-litrowy silnik V8 o mocy 476 KM i momencie obrotowym 650 Nm, zapewnia niezapomniane wrażenia z jazdy. Przyspieszenie od 0 do 100 km/h zajmuje jedynie 4,0 sekundy, a prędkość maksymalna wynosi 250 km/h. To idealne połączenie komfortu, technologii i sportowego charakteru.`,
       images: ["./img/c63s.jpg", "./img/c63s-1.jpg", "./img/c63s-2.jpg", "./img/c63s-3.jpg", "./img/c63s-4.jpg"],
@@ -42,6 +43,7 @@ function getCarDataById(id) {
     {
       id: "rs3",
       headerImage: "./img/audirs3_wal.jpg",
+      carImage: "./img/audirs3-2.jpg",
       car_title: "Audi RS3",
       car_text: `Audi RS3 to kompaktowy samochód sportowy o wyjątkowych osiągach i nowoczesnym designie. Wyposażony w 2.5-litrowy, pięciocylindrowy silnik o mocy 400 KM i momencie obrotowym 500 Nm, zapewnia przyspieszenie od 0 do 100 km/h w zaledwie 3,8 sekundy. Prędkość maksymalna wynosi 250 km/h, co czyni go idealnym wyborem dla miłośników dynamicznej jazdy. RS3 łączy sportowy charakter z wygodą i technologią, oferując niezrównane wrażenia za kierownicą.`,
       images: [
@@ -79,6 +81,7 @@ function getCarDataById(id) {
     {
       id: "m340ix",
       headerImage: "./img/bmwm340i_wal.jpg",
+      carImage: "./img/bmwm340i.jpg",
       car_title: "BMW M340i xDrive Touring",
       car_text: `BMW M340i xDrive Touring to doskonałe połączenie dynamiki, przestronności i komfortu. Wyposażony w 3.0-litrowy silnik R6 o mocy 374 KM i momencie obrotowym 500 Nm, zapewnia niezrównaną radość z jazdy. Przyspieszenie od 0 do 100 km/h zajmuje jedynie 4,5 sekundy, a prędkość maksymalna wynosi 250 km/h. Ten wszechstronny model oferuje luksusowe wnętrze, zaawansowane technologie oraz sportowy charakter, co czyni go idealnym wyborem zarówno na codzienne przejazdy, jak i dłuższe podróże.`,
       images: ["./img/bmwm340i.jpg", "./img/bmwm340i-1.jpg", "./img/bmwm340i-2.jpg", "./img/bmwm340i-3.jpg", "./img/bmwm340i-4.jpg"],
@@ -109,6 +112,7 @@ function getCarDataById(id) {
     {
       id: "cupra-vz5",
       headerImage: "./img/cupra_wal.jpg",
+      carImage: "./img/cupra-6.jpg",
       car_title: "Cupra Formentor VZ5",
       car_text: `Cupra Formentor VZ5 to wyjątkowy SUV, który łączy sportowy charakter z nowoczesnym designem. Wyposażony w 2.5-litrowy silnik R5 o mocy 390 KM i momencie obrotowym 480 Nm, oferuje niepowtarzalne wrażenia z jazdy.
       Przyspieszenie od 0 do 100 km/h zajmuje zaledwie 4,2 sekundy, a prędkość maksymalna wynosi 250 km/h. To idealny wybór dla kierowców, którzy cenią sobie osiągi, styl i nowoczesne technologie.
@@ -149,6 +153,7 @@ function getCarDataById(id) {
     {
       id: "audi-rs6",
       headerImage: "./img/audirs6_wal.jpg",
+      carImage: "./img/audirs6.jpg",
       car_title: "Audi RS6 Avant",
       car_text: `Audi RS6 Avant to wyjątkowa wersja sportowego kombi, które łączy osiągi, przestronność i luksus. Wyposażone w 4.0-litrowy silnik V8 o mocy 630 KM i momencie obrotowym 850 Nm, oferuje niezrównaną dynamikę. Przyspieszenie od 0 do 100 km/h zajmuje jedynie 3,4 sekundy, a prędkość maksymalna wynosi 280 km/h. 
       RS6 Avant to połączenie wyjątkowych osiągów z przestronnością typową dla kombi, co czyni go idealnym wyborem dla osób szukających kompromisu między rodziną a pasją do sportowej jazdy. 
@@ -188,6 +193,7 @@ function getCarDataById(id) {
     {
       id: "audi-rsq3",
       headerImage: "./img/audirsq3_wal.jpg",
+      carImage: "./img/audirsq3.jpg",
       car_title: "Audi RS Q3",
       car_text: `Audi RS Q3 to sportowy SUV, który łączy moc, przestronność i nowoczesne technologie. Wyposażony w 2.5-litrowy silnik R5 o mocy 400 KM i momencie obrotowym 480 Nm, zapewnia dynamiczną jazdę zarówno w mieście, jak i poza nim. Przyspieszenie od 0 do 100 km/h wynosi jedynie 4,5 sekundy, a prędkość maksymalna to 250 km/h. 
       RS Q3 to idealny wybór dla osób, które szukają sportowych osiągów w SUV-ie, bez kompromisów w kwestii przestronności i komfortu. Agresywny wygląd nadwozia, sportowe akcenty oraz najnowsze technologie we wnętrzu czynią ten model jednym z najatrakcyjniejszych w swojej klasie.`,
@@ -226,6 +232,7 @@ function getCarDataById(id) {
     {
       id: "megane-rs",
       headerImage: "./img/meganers_wal.jpg",
+      carImage: "./img/meganers.jpg",
       car_title: "Renault Mégane RS",
       car_text: `Renault Mégane RS to sportowy hatchback, który łączy dynamiczną jazdę z codzienną użytecznością. Wyposażony w 1.8-litrowy silnik R4 o mocy 300 KM i momencie obrotowym 400 Nm, oferuje niezrównaną frajdę z jazdy. Przyspieszenie od 0 do 100 km/h wynosi 5,7 sekundy, a prędkość maksymalna to 260 km/h.
       Z agresywnym wyglądem nadwozia, precyzyjnym układem jezdnym oraz technologiami z wyższej półki, Renault Mégane RS jest idealnym wyborem dla miłośników sportowych osiągów i motoryzacyjnego charakteru. To samochód, który sprawdzi się zarówno na torze, jak i na codziennych trasach.`,
@@ -265,6 +272,7 @@ function getCarDataById(id) {
     {
       id: "huracan-evo",
       headerImage: "./img/lambo_wal.jpg",
+      carImage: "./img/lambo.jpg",
       car_title: "Lamborghini Huracán Evo",
       car_text: `Lamborghini Huracán Evo to samochód, który łączy niesamowitą moc z precyzyjnym wykonaniem i luksusową elegancją. Wyposażony w 5.2-litrowy silnik V10 o mocy 640 KM i momencie obrotowym 565 Nm, zapewnia niewiarygodną przyjemność z jazdy. Przyspieszenie od 0 do 100 km/h wynosi zaledwie 2,9 sekundy, a maksymalna prędkość to 325 km/h.
       Dzięki doskonałej aerodynamice, dynamicznym właściwościom jezdnym oraz charakterystycznemu, agresywnemu wyglądowi, Huracán Evo to jeden z najpotężniejszych supersamochodów na rynku, idealny zarówno na tor, jak i do codziennej ekskluzywnej jazdy.`,
@@ -296,6 +304,7 @@ function getCarDataById(id) {
     {
       id: "golf-7r",
       headerImage: "./img/golf7r_wal.jpg",
+      carImage: "./img/golf7r.jpg",
       car_title: "Volkswagen Golf 7R",
       car_text: `Volkswagen Golf 7R to sportowa wersja popularnego hatchbacka, która oferuje imponującą moc i wyjątkową dynamikę. Wyposażony w 2.0-litrowy silnik R4 o mocy 300 KM i momencie obrotowym 380 Nm, Golf 7R zapewnia wyjątkowe osiągi i radość z jazdy. Przyspieszenie od 0 do 100 km/h zajmuje tylko 4,8 sekundy, a prędkość maksymalna wynosi 250 km/h.
       Dzięki napędowi na cztery koła (4Motion) oraz precyzyjnemu zawieszeniu, Golf 7R oferuje niesamowitą stabilność i kontrolę zarówno na drodze, jak i w trudniejszych warunkach. To idealny samochód dla tych, którzy cenią sportowy charakter, ale nie rezygnują z komfortu i codziennej użyteczności.`,
@@ -327,6 +336,7 @@ function getCarDataById(id) {
     {
       id: "bmw-m2-competition",
       headerImage: "./img/bmwm2_wal.jpg",
+      carImage: "./img/bmwm2.jpg",
       car_title: "BMW M2 Competition",
       car_text: `BMW M2 Competition to prawdziwa maszyna stworzona z myślą o pasjonatach sportowej jazdy. Wyposażony w 3.0-litrowy silnik R6 o mocy 410 KM i momencie obrotowym 550 Nm, oferuje niezrównaną dynamikę i precyzyjne prowadzenie. Przyspieszenie od 0 do 100 km/h zajmuje zaledwie 4,4 sekundy, a prędkość maksymalna wynosi 250 km/h.
       Dzięki napędowi na tylne koła (RWD) oraz zoptymalizowanemu zawieszeniu, M2 Competition zapewnia niezapomniane wrażenia z jazdy, które są zarówno ekscytujące, jak i precyzyjnie kontrolowane. Idealny wybór dla tych, którzy szukają sportowego samochodu, który łączy moc, technologię i styl.`,
@@ -358,6 +368,7 @@ function getCarDataById(id) {
     {
       id: "ferrari-f12-berlinetta",
       headerImage: "./img/f12_wal.jpg",
+      carImage: "./img/ferrari.jpg",
       car_title: "Ferrari F12 Berlinetta",
       car_text: `Ferrari F12 Berlinetta to perfekcyjnie zaprojektowane gran turismo, które oferuje niezrównaną moc i elegancję. Wyposażone w potężny silnik 6.3 V12 o mocy 740 KM i momencie obrotowym 690 Nm, F12 Berlinetta zapewnia fenomenalne osiągi, które pozwalają na przyspieszenie od 0 do 100 km/h w zaledwie 3,1 sekundy. Prędkość maksymalna wynosi 340 km/h, co czyni ten samochód jednym z najszybszych na rynku.
       Jego aerodynamiczny design oraz precyzyjne prowadzenie na torze i na drodze sprawiają, że jest to samochód dla prawdziwych pasjonatów motoryzacji. F12 Berlinetta to idealne połączenie luksusu, wydajności i sportowego charakteru.`,
@@ -396,6 +407,7 @@ function getCarDataById(id) {
     {
       id: "amg-gtr",
       headerImage: "./img/amggtr_wal.jpg",
+      carImage: "./img/amggtr.jpg",
       car_title: "Mercedes AMG GTR",
       car_text: `AMG GTR to wyjątkowy samochód sportowy, który łączy niesamowite osiągi z eleganckim designem. Wyposażony w 4.0-litrowy silnik V8 o
       mocy 585 KM, zapewnia niezwykle dynamiczną jazdę i precyzyjne prowadzenie. Jego agresywna sylwetka, szerokie nadkola i aerodynamika,
@@ -445,8 +457,8 @@ function loadCarDetails() {
     document.getElementById("liczbaDrzwi").innerText = car.liczbaDrzwi;
     document.getElementById("liczbaMiejsc").innerText = car.liczbaMiejsc;
     document.getElementById("rodzajPaliwa").innerText = car.rodzajPaliwa;
-
     document.getElementById("zawieszenie").innerText = car.zawieszenie;
+
     document.getElementById("systemy_bezpieczenstwa").innerText = car.systemy_bezpieczenstwa;
     document.getElementById("wnetrze").innerText = car.wnętrze;
     document.getElementById("audio").innerText = car.audio;
@@ -464,23 +476,45 @@ function loadCarDetails() {
     const carHeader = document.getElementById("car-header");
     carHeader.style.backgroundImage = `url(${car.headerImage})`;
 
-    const carouselInner = document.querySelector(".carousel-inner");
-    carouselInner.innerHTML = "";
+    const carImage = document.getElementById("car-image");
+    carImage.src = car.carImage;
 
-    car.images.forEach((image, index) => {
-      const carouselItem = document.createElement("div");
-      carouselItem.classList.add("carousel-item");
-      if (index === 0) {
-        carouselItem.classList.add("active");
-      }
+    const splideList = document.querySelector("#image-carousel .splide__list");
 
-      const imgElement = document.createElement("img");
-      imgElement.src = image;
-      imgElement.classList.add("d-block", "w-100", "img-fluid");
+    // Przyjmujemy, że car.images zawiera ścieżki do obrazków
+    car.images.forEach((imageSrc, index) => {
+      const slide = document.createElement("li");
+      slide.classList.add("splide__slide");
 
-      carouselItem.appendChild(imgElement);
-      carouselInner.appendChild(carouselItem);
+      // Tworzymy link do lightboxa
+      const link = document.createElement("a");
+      link.href = imageSrc; // Link do obrazu w pełnym rozmiarze
+      link.setAttribute("data-lightbox", "gallery"); // Grupa galerii lightboxa
+      link.setAttribute("data-title", `Zdjęcie samochodu ${index + 1}`); // Opis obrazu (opcjonalnie)
+
+      const img = document.createElement("img");
+      img.src = imageSrc;
+      img.alt = `Zdjęcie samochodu ${index + 1}`;
+
+      // Dodajemy obraz do linku, a link do slajdu
+      link.appendChild(img);
+      slide.appendChild(link);
+      splideList.appendChild(slide);
     });
+
+    // Inicjalizacja Splide
+    new Splide("#image-carousel", {
+      perPage: 3,
+      gap: "30px",
+      breakpoints: {
+        1024: {
+          perPage: 2,
+        },
+        640: {
+          perPage: 1,
+        },
+      },
+    }).mount();
   }
 }
 

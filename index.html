@@ -34,7 +34,6 @@
     <nav class="nav">
       <div class="nav nav--active">
         <div class="nav__items">
-          <a href="#" class="nav__item" data-bs-toggle="modal" data-bs-target="#clientPanelModal">Panel klienta</a>
           <a href="#offers" class="nav__item">Oferta</a>
           <a href="#aboutus" class="nav__item">O nas</a>
           <a href="#reviews" class="nav__item">Opinie</a>
@@ -94,7 +93,7 @@
               <h3 class="rent__title">Wypełnij formularz</h3>
               <p class="rent__text">
                 W formularzu wybierz preferowany termin wynajmu, wprowadź swoje dane kontaktowe i ewentualne dodatkowe informacje. Możesz także
-                zaznaczyć opcję, abyśmy skontaktowali się z Tobą telefonicznie.
+                zaznaczyć opcję, abyśmy skontaktowali się z Tobą telefonicznie w celu dopasowaniu indywidualnych warunków.
               </p>
             </div>
           </div>
@@ -530,57 +529,6 @@
       <hr />
       <p class="footer__bottom-text">&copy; <span class="footer__year"></span> Fast Rent</p>
     </footer>
-
-    <div class="modal fade" id="clientPanelModal" tabindex="-1" aria-labelledby="clientPanelModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <p class="modal-title" id="clientPanelModalLabel">Logowanie</p>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body m-5">
-            <div id="loginForm">
-              <form id="loginSubmit">
-                <div class="mb-3">
-                  <label for="loginEmail" class="form-label">Adres email</label>
-                  <input type="email" class="form-control" id="loginEmail" placeholder="Wpisz swój email" />
-                </div>
-                <div class="mb-3">
-                  <label for="loginPassword" class="form-label">Hasło</label>
-                  <input type="password" class="form-control" id="loginPassword" placeholder="Wpisz swoje hasło" />
-                </div>
-                <div class="mt-3">
-                  <p>Nie masz konta? <a href="javascript:void(0);" id="toRegisterForm">Załóż konto</a></p>
-                </div>
-                <button type="submit" class="btn btn-secondary d-block ms-auto">Zaloguj się</button>
-              </form>
-            </div>
-
-            <div id="registerForm" class="form-container" style="display: none">
-              <form id="registerSubmit">
-                <div class="mb-3">
-                  <label for="registerName" class="form-label">Imię i nazwisko</label>
-                  <input type="text" class="form-control" id="registerName" placeholder="Wpisz swoje imię i nazwisko" />
-                </div>
-                <div class="mb-3">
-                  <label for="registerEmail" class="form-label">Adres email</label>
-                  <input type="email" class="form-control" id="registerEmail" placeholder="Wpisz swój email" />
-                </div>
-                <div class="mb-3">
-                  <label for="registerPassword" class="form-label">Hasło</label>
-                  <input type="password" class="form-control" id="registerPassword" placeholder="Wpisz swoje hasło" />
-                </div>
-                <div class="mb-3">
-                  <label for="registerConfirmPassword" class="form-label">Potwierdź hasło</label>
-                  <input type="password" class="form-control" id="registerConfirmPassword" placeholder="Potwierdź swoje hasło" />
-                </div>
-                <button type="submit" class="btn btn-secondary d-block ms-auto mt-5">Zarejestruj się</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

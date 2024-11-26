@@ -25,9 +25,11 @@
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.6/dist/css/splide.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
-  <body>
+  <body class="car-main">
     <button class="burger-btn">
       <div class="burger-btn__box">
         <div class="burger-btn__bars"></div>
@@ -36,7 +38,6 @@
     <nav class="nav">
       <div class="nav nav--active">
         <div class="nav__items">
-          <a href="#" class="nav__item" data-bs-toggle="modal" data-bs-target="#clientPanelModal">Panel klienta</a>
           <a href="/index.html#offers" class="nav__item">Oferta</a>
           <a href="/index.html#aboutus" class="nav__item">O nas</a>
           <a href="/index.html#reviews" class="nav__item">Opinie</a>
@@ -46,161 +47,174 @@
     </nav>
 
     <header class="car-header section" id="car-header">
-      <h1 id="car-name"></h1>
-      <div class="white-block white-block-left"></div>
+      <div class="white-block-car white-block-car-left"></div>
     </header>
 
-    <main class="main">
-      <section class="car section-padding section white-section">
-        <div class="wrapper">
-          <div class="row">
-            <div class="col-md-5 col-lg-4">
-              <div class="mb-4">
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner"></div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Poprzednie</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Następne</span>
-                  </button>
+    <main class="car-main">
+      <section class="container-fluid car-border">
+        <section class="container-fluid auto-ogolne text-center">
+          <div class="wrapper">
+            <div class="text-center mb-4">
+              <h1 class="car-title" id="car_title"></h1>
+              <p class="car-subtitle text-muted">Wynajmij samochodód sportowy</p>
+            </div>
+
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <div class="auto-zdjecie float-end">
+                  <img class="img-fluid rounded shadow" id="car-image" />
+                </div>
+              </div>
+
+              <div class="col-md-6 auto-tresc">
+                <p class="rent-bold-text">Wynajmij samochód już teraz!</p>
+                <p class="car-description">
+                  Wynajmij Samochód, który zapewnia niesamowite emocje za kierownicą. Nowy agresywny wygląd przykuje każdego uwagę. Sprawdź ofertę na
+                  wynajem poniżej!
+                </p>
+              </div>
+            </div>
+
+            <div class="gallery mt-5 text-center">
+              <h3 class="text-gallery">Galeria</h3>
+              <hr class="mb-3" />
+              <div id="image-carousel" class="splide">
+                <div class="splide__track">
+                  <ul class="splide__list"></ul>
+                </div>
+                <div class="splide__arrows">
+                  <button class="splide__arrow splide__arrow--prev">‹</button>
+                  <button class="splide__arrow splide__arrow--next">›</button>
+                </div>
+                <!-- Kropki -->
+                <div class="splide__pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container-fluid auto-specyfikacja py-5">
+          <div class="wrapper">
+            <h1 class="mb-5 black-heading">Specyfikacja</h1>
+
+            <div class="row g-4">
+              <div class="col-12 col-md-6 col-lg-3 text-center">
+                <div class="spec-box">
+                  Moc:
+                  <strong><p id="moc"></p></strong>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 text-center">
+                <div class="spec-box">
+                  0-100 km/h:
+                  <strong><p id="zeroToHundred"></p></strong>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 text-center">
+                <div class="spec-box">
+                  Skrzynia:
+                  <strong><p id="skrzynia"></p></strong>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 text-center">
+                <div class="spec-box">
+                  Napęd:
+                  <strong><p id="naped"></p></strong>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 text-center">
+                <div class="spec-box">
+                  Silnik:
+                  <strong><p id="silnik"></p></strong>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 text-center">
+                <div class="spec-box">
+                  Liczba drzwi:
+                  <strong><p id="liczbaDrzwi"></p> </strong>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 text-center">
+                <div class="spec-box">
+                  Liczba miejsc:
+                  <strong><p id="liczbaMiejsc"></p> </strong>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 text-center">
+                <div class="spec-box">
+                  Rodzaj paliwa:
+                  <strong> <p id="rodzajPaliwa"></p></strong>
                 </div>
               </div>
             </div>
-
-            <div class="col-md-7 col-lg-8 car__text">
-              <div class="p-5 mb-4">
-                <h2 id="car_title" class="car_title"></h2>
-                <p id="car_text"></p>
-              </div>
-            </div>
           </div>
+        </section>
 
-          <div class="container-fluid">
-            <div class="list-group">
-              <a href="#" class="list-group-item list-group-item-action" data-target="dane-techniczne">Dane Techniczne</a>
-              <a href="#" class="list-group-item list-group-item-action" data-target="wyposazenie">Wyposażenie</a>
-              <a href="#" class="list-group-item list-group-item-action" data-target="cennik">Cennik</a>
-            </div>
+        <section class="container-fluid auto-opis py-5">
+          <div class="wrapper">
+            <p id="car_text" class="text-muted"></p>
+            <span class="auto-wyposazenie text-muted">Zawieszenie:</span>
+            <strong><span id="zawieszenie"></span></strong><br />
 
-            <div id="dane-techniczne" class="content show">
-              <h2>Dane Techniczne</h2>
+            <span class="auto-wyposazenie text-muted">Systemy bezpieczeństwa:</span>
+            <strong><span id="systemy_bezpieczenstwa"></span></strong><br />
 
-              <table class="table table-striped">
-                <tbody>
-                  <tr>
-                    <td>Moc</td>
-                    <td id="moc"></td>
-                  </tr>
-                  <tr>
-                    <td>0-100 km/h</td>
-                    <td id="zeroToHundred"></td>
-                  </tr>
-                  <tr>
-                    <td>Skrzynia</td>
-                    <td id="skrzynia"></td>
-                  </tr>
-                  <tr>
-                    <td>Napęd</td>
-                    <td id="naped"></td>
-                  </tr>
-                  <tr>
-                    <td>Silnik</td>
-                    <td id="silnik"></td>
-                  </tr>
-                  <tr>
-                    <td>Liczba drzwi</td>
-                    <td id="liczbaDrzwi"></td>
-                  </tr>
-                  <tr>
-                    <td>Liczba miejsc</td>
-                    <td id="liczbaMiejsc"></td>
-                  </tr>
-                  <tr>
-                    <td>Rodzaj paliwa</td>
-                    <td id="rodzajPaliwa"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <span class="auto-wyposazenie text-muted">Wnętrze:</span>
+            <strong><span id="wnetrze"></span></strong><br />
 
-            <div id="wyposazenie" class="content">
-              <h2>Wyposażenie</h2>
+            <span class="auto-wyposazenie text-muted">Audio:</span>
+            <strong><span id="audio"></span></strong><br />
 
-              <table class="table table-striped">
-                <tbody>
-                  <tr>
-                    <td>Zawieszenie</td>
-                    <td id="zawieszenie"></td>
-                  </tr>
-                  <tr>
-                    <td>Systemy bezpieczeństwa</td>
-                    <td id="systemy_bezpieczenstwa"></td>
-                  </tr>
-                  <tr>
-                    <td>Wnętrze</td>
-                    <td id="wnetrze"></td>
-                  </tr>
-                  <tr>
-                    <td>Audio</td>
-                    <td id="audio"></td>
-                  </tr>
-                  <tr>
-                    <td>Światła</td>
-                    <td id="swiatla"></td>
-                  </tr>
-                  <tr>
-                    <td>Wygląd zewnętrzny</td>
-                    <td id="wyglad_zewnetrzny"></td>
-                  </tr>
-                  <tr>
-                    <td>Koła i opony</td>
-                    <td id="kola"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <span class="auto-wyposazenie text-muted">Światła:</span>
+            <strong><span id="swiatla"></span></strong><br />
 
-            <div id="cennik" class="content">
-              <h2>Cennik</h2>
-              <table class="table table-striped">
-                <tbody>
-                  <tr>
-                    <td>1 dzień</td>
-                    <td id="cena_1dzien"></td>
-                  </tr>
-                  <tr>
-                    <td>2-3 dni</td>
-                    <td id="cena_2_3dni"></td>
-                  </tr>
-                  <tr>
-                    <td>4-6 dni</td>
-                    <td id="cena_4_6dni"></td>
-                  </tr>
-                  <tr>
-                    <td>7-13 dni</td>
-                    <td id="cena_7_13dni"></td>
-                  </tr>
-                  <tr>
-                    <td>14-29 dni</td>
-                    <td id="cena_14_29dni"></td>
-                  </tr>
-                  <tr>
-                    <td>Miesiąc</td>
-                    <td id="cena_miesiac"></td>
-                  </tr>
-                </tbody>
-              </table>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservationModal">Rezerwuj</button>
-            </div>
+            <span class="auto-wyposazenie text-muted">Wygląd zewnętrzny:</span>
+            <strong><span id="wyglad_zewnetrzny"></span></strong><br />
+
+            <span class="auto-wyposazenie text-muted"> Koła i opony:</span>
+            <strong><span id="kola"></span></strong>
           </div>
-        </div>
+        </section>
+
+        <section class="container-fluid auto-cennik py-5">
+          <div class="wrapper">
+            <h1 class="mb-4 black-heading">Cennik</h1>
+            <table class="table text-center mt-4 car-table">
+              <tbody>
+                <tr>
+                  <td>1 dzień</td>
+                  <td id="cena_1dzien"></td>
+                </tr>
+                <tr>
+                  <td>2-3 dni</td>
+                  <td id="cena_2_3dni"></td>
+                </tr>
+                <tr>
+                  <td>4-6 dni</td>
+                  <td id="cena_4_6dni"></td>
+                </tr>
+                <tr>
+                  <td>7-13 dni</td>
+                  <td id="cena_7_13dni"></td>
+                </tr>
+                <tr>
+                  <td>14-29 dni</td>
+                  <td id="cena_14_29dni"></td>
+                </tr>
+                <tr>
+                  <td>Miesiąc</td>
+                  <td id="cena_miesiac"></td>
+                </tr>
+                <tr></tr>
+              </tbody>
+            </table>
+            <button type="button" class="btn btn-secondary btn-reservation float-end" data-bs-toggle="modal" data-bs-target="#reservationModal">
+              Rezerwuj
+            </button>
+          </div>
+        </section>
       </section>
     </main>
-
-    <!-- okno modal do rezerwacji -->
 
     <div class="modal fade reservation-modal" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
@@ -298,66 +312,11 @@
       <p class="footer__bottom-text">&copy; <span class="footer__year"></span> Fast Rent</p>
     </footer>
 
-    <div class="modal fade" id="clientPanelModal" tabindex="-1" aria-labelledby="clientPanelModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <p class="modal-title" id="clientPanelModalLabel">Logowanie</p>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body m-5">
-            <div id="loginForm">
-              <form id="loginSubmit">
-                <div class="mb-3">
-                  <label for="loginEmail" class="form-label">Adres email</label>
-                  <input type="email" class="form-control" id="loginEmail" placeholder="Wpisz swój email" />
-                </div>
-                <div class="mb-3">
-                  <label for="loginPassword" class="form-label">Hasło</label>
-                  <input type="password" class="form-control" id="loginPassword" placeholder="Wpisz swoje hasło" />
-                </div>
-                <div class="mt-3">
-                  <p>
-                    Nie masz konta?
-                    <a href="javascript:void(0);" id="toRegisterForm">Załóż konto</a>
-                  </p>
-                </div>
-                <button type="submit" class="btn btn-secondary d-block ms-auto">Zaloguj się</button>
-              </form>
-            </div>
-
-            <div id="registerForm" class="form-container" style="display: none">
-              <form id="registerSubmit">
-                <div class="mb-3">
-                  <label for="registerName" class="form-label">Imię i nazwisko</label>
-                  <input type="text" class="form-control" id="registerName" placeholder="Wpisz swoje imię i nazwisko" />
-                </div>
-                <div class="mb-3">
-                  <label for="registerEmail" class="form-label">Adres email</label>
-                  <input type="email" class="form-control" id="registerEmail" placeholder="Wpisz swój email" />
-                </div>
-                <div class="mb-3">
-                  <label for="registerPassword" class="form-label">Hasło</label>
-                  <input type="password" class="form-control" id="registerPassword" placeholder="Wpisz swoje hasło" />
-                </div>
-                <div class="mb-3">
-                  <label for="registerConfirmPassword" class="form-label">Potwierdź hasło</label>
-                  <input type="password" class="form-control" id="registerConfirmPassword" placeholder="Potwierdź swoje hasło" />
-                </div>
-                <button type="submit" class="btn btn-secondary d-block ms-auto mt-5">Zarejestruj się</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/login.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -369,10 +328,11 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="js/dynamic_car_nav.js"></script>
     <script src="js/car.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pl.js"></script>
     <script src="js/calendar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.6/dist/js/splide.min.js"></script>
   </body>
 </html>
