@@ -1,26 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var dateRangePicker = flatpickr("#dateRangePicker", {
+  const dateRangePicker = flatpickr("#dateRangePicker", {
     mode: "range",
     dateFormat: "Y-m-d",
     minDate: "today",
     locale: "pl",
     static: true,
     inline: true,
-    onChange: function (selectedDates) {
-      if (selectedDates.length > 0) {
-        const startDate = selectedDates[0];
-        const endDate = selectedDates[1] || startDate;
-
-        const timeDiff = endDate - startDate;
-        const numberOfDays = timeDiff / (1000 * 3600 * 24);
-
-        const startDateFormatted = startDate.toLocaleDateString();
-        const endDateFormatted = endDate.toLocaleDateString();
-
-        document.getElementById("selectedDates").innerText = `Wybrany termin: od ${startDateFormatted} do ${endDateFormatted}. W sumie ${
-          numberOfDays + 1
-        } dni.`;
-      }
-    },
+    onChange: updateCost,
   });
+
+  const checkboxes = document.querySelectorAll(".reservation-checkbox");
+  checkboxes.forEach((checkbox) => checkbox.addEventListener("change", updateCost));
+
+  function updateCost() {
+    const startDate = dateRangePicker.selectedDates[0];
+    const endDate = dateRangePicker.selectedDates[1] || startDate;
+
+    if (startDate && endDate) {
+      const timeDiff = endDate - startDate;
+      const numberOfDays = timeDiff / (1000 * 3600 * 24) + 1;
+
+      document.getElementById(
+        "selectedDates"
+      ).innerText = `Wybrany termin: od ${startDate.toLocaleDateString()} do ${endDate.toLocaleDateString()}. W sumie ${numberOfDays} dni.`;
+
+      calculateTotalCost(startDate, endDate, numberOfDays);
+    }
+  }
 });
